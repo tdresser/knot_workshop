@@ -5,7 +5,11 @@ body {
 #container {
   margin: auto;
   margin-top: 2em;
-  width: 11in;
+  max-width: 11in;
+}
+
+#inner_container {
+    margin:2em;
 }
 
 h1,
@@ -21,9 +25,20 @@ h2 {
   font-weight: 300;
 }
 
+li {
+    margin-left: 2em;
+}
+
+b {
+    font-family: "Marcellus SC", serif;
+}
+
 @media print {
   #container {
     margin: 0;
+  }
+  #inner_container {
+    margin:0;
   }
   #nav {
     display: none;
