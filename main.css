@@ -33,6 +33,19 @@ b {
     font-family: "Marcellus SC", serif;
 }
 
+#nav {
+    display:flex;
+    align-items: baseline;
+}
+
+h1 {
+    margin-right: auto;
+}
+
+#nav .spacer {
+    margin:1em;
+}
+
 @media print {
   #container {
     margin: 0;
