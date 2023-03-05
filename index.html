@@ -26,7 +26,27 @@
       img {
         width: 1.5in;
         margin: 0 auto;
+        margin-top: auto;
       }
+      .img_cell {
+        display: flex;
+        flex-direction: column;
+        height:100%;
+      }
+
+      table tr:nth-child(n+3) td {
+        padding-top:0.5em;
+      }
+
+      /* the images in the third row don't have white at the bottom, so we need a bit of extra space */
+      table tr:nth-child(3) td {
+        padding-bottom:0.5em;
+      }
+
+      .img_cell_hack img {
+        margin-top: 0;
+      }
+
       tr#titles td {
         text-align: center;
         font-size: 1em;
@@ -103,16 +123,22 @@
               </p>
             </td>
             <td>
-              <div>Overhand</div>
-              <img src="images/overhand.png" />
+              <div class="img_cell img_cell_hack">
+                <div>Overhand</div>
+                <img src="images/overhand.png" />
+              </div>
             </td>
             <td>
-              <div>Figure Eight</div>
-              <img src="images/figure_eight.png" />
+              <div class="img_cell img_cell_hack">
+                <div>Figure Eight</div>
+                <img src="images/figure_eight.png" />
+              </div>
             </td>
             <td>
-              <div>Double Overhand</div>
-              <img src="images/double_overhand.png" />
+              <div class="img_cell img_cell_hack">
+                <div>Double Overhand</div>
+                <img src="images/double_overhand.png" />
+              </div>
             </td>
           </tr>
           <tr>
@@ -132,16 +158,22 @@
               </p>
             </td>
             <td>
-              <div>Half Hitch</div>
-              <img src="images/overhand_hitch.png" />
+              <div class="img_cell">
+                <div>Half Hitch</div>
+                <img src="images/overhand_hitch.png" />
+              </div>
             </td>
             <td>
-              <div>Figure Eight Hitch</div>
-              <img src="images/figure_eight_hitch.png" />
+              <div class="img_cell">
+                <div>Figure Eight Hitch</div>
+                <img src="images/figure_eight_hitch.png" />
+              </div>
             </td>
             <td>
-              <div>Double Overhand Hitch</div>
-              <img src="images/double_overhand_hitch.png" />
+              <div class="img_cell">
+                <div>Double Overhand Hitch</div>
+                <img src="images/double_overhand_hitch.png" />
+              </div>
             </td>
           </tr>
           <tr>
@@ -156,16 +188,22 @@
               <p>Tie on a bight, or follow through (see <b>Bend</b>).</p>
             </td>
             <td>
-              <div>Overhand on a Bight</div>
-              <img src="images/overhand_loop.png" />
+              <div class="img_cell">
+                <div>Overhand on a Bight</div>
+                <img src="images/overhand_loop.png" />
+              </div>
             </td>
             <td>
-              <div>Figure Eight on a Bight</div>
-              <img src="images/figure_eight_loop.png" />
+              <div class="img_cell">
+                <div>Figure Eight on a Bight</div>
+                <img src="images/figure_eight_loop.png" />
+              </div>
             </td>
             <td>
-              <div>Double Overhand on a Bight</div>
-              <img src="images/double_overhand_loop.png" />
+              <div class="img_cell">
+                <div>Double Overhand on a Bight</div>
+                <img src="images/double_overhand_loop.png" />
+              </div>
             </td>
           </tr>
           <tr>
@@ -180,16 +218,22 @@
               </p>
             </td>
             <td>
-              <div>Overhand Follow Through Bend (Water Knot)</div>
-              <img src="images/overhand_bend.png" />
+              <div class="img_cell">
+                <div>Overhand Follow Through Bend (Water Knot)</div>
+                <img src="images/overhand_bend.png" />
+              </div>
             </td>
             <td>
-              <div>Figure Eight Follow Through Bend</div>
-              <img src="images/figure_eight_bend.png" />
+              <div class="img_cell">
+                <div>Figure Eight Follow Through Bend</div>
+                <img src="images/figure_eight_bend.png" />
+              </div>
             </td>
             <td>
-              <div>Double Overhand Follow Through Bend</div>
-              <img src="images/double_overhand_bend.png" />
+              <div class="img_cell">
+                <div>Double Overhand Follow Through Bend</div>
+                <img src="images/double_overhand_bend.png" />
+              </div>
             </td>
           </tr>
         </table>
