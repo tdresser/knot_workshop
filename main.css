@@ -56,4 +56,7 @@ h1 {
   #nav {
     display: none;
   }
+  #print_heading {
+    display:block !important;
+  }
 }
